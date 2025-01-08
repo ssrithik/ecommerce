@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        img{
+            margin-top: 25px;
+            height: 80px;
+            width:  80px;
+            border-radius: 50%;
+            
+            padding: 10px;          
+        }
+    #three{
+        width:400px;
+        height: 45px;
+        background-color: #1a237e;
+        margin-left: 420px;
+        margin-top:80px;
+        border-radius:15px 15px 0px 0px;
+    }
+    #log{
+        text-align: center;
+        width:400px;
+        margin-left: 420px;
+        height:380px;
+        background-color: white;
+        border-radius:0px 0px 15px 15px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .dot1{
+        height:12px;
+        width:12px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: #ff5f56;
+        margin-top: 15px;
+        margin-left: 18px;
+    }
+    .dot2{
+        height:12px;
+        width:12px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: #ffbd2e;
+        margin-top: 15px;
+        margin-left: 8px;
+    }
+    .dot3{
+        height:12px;
+        width:12px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: #27c93f;
+        margin-top: 15px;
+        margin-left: 8px;
+    }
+    input{
+        height:35px;
+        width:250px;
+        border-radius: 20px;
+        border: 1px solid #ddd;
+        padding : 0 15px;
+        margin:8px 0;
+        font-size: 14px;
+    }
+    input::placeholder
+    {
+        color: #666;
+    }
+    button{
+        width: 250px;
+        height:40px;
+        background-color: #ff3b30;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        
+    }
+    p{
+        color: darkblue;
+    }
+    body{
+  background: radial-gradient(circle at center,
+    #00B2FF 0%,
+    #0095FF 70%,
+    #0080FF 100%
+  );
+  width: 100%;
+  height: 100%;
+    }
+    </style>
+</head>
+<body>
+    
+    <div id="three">
+        <span class="dot1"></span>
+        <span class="dot2"></span>
+        <span class="dot3"></span>
+    </div>
+    <div id="log">
+        <img src="./images.jpeg" alt="profile">
+        <form>
+            <br>
+            <input type = "text" id="email" placeholder="Email">
+            <br><br>
+            <input type = "text" id="pass"  placeholder="Password">
+            <br><br>
+            <button type="submit" id="signin">Sign In</button>
+        </form>
+        <p>Cannot access your account?</p>
+    </div>
+</body>
+</html>
