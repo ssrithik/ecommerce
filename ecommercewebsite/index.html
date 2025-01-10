@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
+    <style>
+        #top{
+            display: flex;
+            height: 50px;
+            width:auto;
+        }
+        #Categories{
+            border: none;
+        }
+        
+    </style>
 </head>
 <body>
-    
+    <div id="top">
+        <img src="./images/nexcart.svg" alt="nexcart">
+            <select id="Categories" name="Categories" onchange="updateActivities()" required>
+                <option value="" disabled selected>Categories</option>
+                <option value="shirts">Shirts</option>
+                <option value="headphones">Headphones</option>
+                <option value="watch">Watch</option>
+            </select>
+            <p>Deals</p>
+            <p>What's New</p>
+            <p>Delivery</p>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search Product">
+                <button class="search-button">
+                  <img src="./images/search.svg" alt="Search" class="search-icon">
+                </button>
+              </div>
+
+    </div>
 </body>
 </html>

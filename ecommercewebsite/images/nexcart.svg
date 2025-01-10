@@ -1,0 +1,30 @@
+<svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background for demonstration - can be removed -->
+  <rect width="400" height="120" fill="white"/>
+  
+  
+  <g transform="translate(50, 30) scale(0.8)">
+    <path d="M20 80 L40 80 L60 30 L140 30" stroke="#2563eb" stroke-width="6" fill="none"/>
+    <circle cx="50" cy="90" r="8" fill="#2563eb"/>
+    <circle cx="120" cy="90" r="8" fill="#2563eb"/>
+    <path d="M60 30 L140 30 L120 70 L70 70 Z" fill="#2563eb"/>
+  </g>
+  
+  <!-- Text "Nex" -->
+  <text x="140" y="80" font-family="Arial" font-weight="bold" font-size="60" fill="#1e40af">
+    Nex
+  </text>
+  
+  <!-- Text "cart" -->
+  <text x="250" y="80" font-family="Arial" font-weight="bold" font-size="60" fill="#2563eb">
+    cart
+  </text>
+  
+  <!-- Tagline -->
+  <text x="140" y="100" font-family="Arial" font-size="14" fill="#6b7280">
+    Next Generation Shopping
+  </text>
+  
+  <!-- Decorative swoosh -->
+  <path d="M120 85 Q 200 95 280 85" stroke="#2563eb" stroke-width="2" fill="none" opacity="0.3"/>
+</svg>
