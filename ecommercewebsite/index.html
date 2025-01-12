@@ -9,10 +9,109 @@
             display: flex;
             height: 50px;
             width:auto;
+            flex-direction: row;
+            gap:50px;
+           
         }
         #Categories{
             border: none;
         }
+        .search-container{
+            position: relative;
+            width:300px;
+        }
+        .search-input{
+            width:100%;
+            padding : 12px 40px 12px 15px;
+            border:2px solid #ddd;
+            border-radius: 25px;
+            outline: none;
+            font-size: 16px;
+            transition: border color 0.3s;
+        }
+        .search-input:focus{
+            border-color: #4CAF50;
+        }
+        .search-button{
+            position: absolute;
+            right: 15px;
+         top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        background: none;
+         border: none;
+         padding: 0;
+        }
+        .search-icon{
+            height:16px;
+            width:16px;
+            display: block;
+            color:#666;
+        }
+        .account{
+            height: 16px;
+            width: 16px;
+        }
+      #acc{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 5px;
+      }
+      .cart{
+        height: 20px;
+        width:20px;
+      }
+      #cart{
+        display: flex;
+        align-items: center;
+        gap:5px;
+      }
+      #acc1{
+        font-size: 16px;
+      }
+      #shirt{
+        margin-top:20px;
+        margin-left: 30px;
+        margin-right:50px;
+        height:200px;
+        width: auto;
+        background-color:antiquewhite;
+        display: flex;
+        gap:30px;
+      }
+      #off{
+        margin-top:35px;
+        margin-right:150px;
+        margin-left:150px;
+      }
+      
+      #but{
+        margin-top:20px;
+        height:35px;
+        width:100px;
+        border-radius: 25px;
+        border: none;
+        color: white;
+        background-color: black;
+        transition: transform 0.2s, background-color 0.2s;
+        cursor: pointer;
+      }
+      @media (max-width: 768px) {
+    #top {
+        gap: 20px;
+    }
+    
+    #off {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    #shirt {
+        flex-direction: column;
+        align-items: center;
+    }
+}
         
     </style>
 </head>
@@ -28,13 +127,27 @@
             <p>Deals</p>
             <p>What's New</p>
             <p>Delivery</p>
+            
             <div class="search-container">
-                <input type="text" class="search-input" placeholder="Search Product">
+                <input type="search" class="search-input" placeholder="Search Product">
                 <button class="search-button">
                   <img src="./images/search.svg" alt="Search" class="search-icon">
                 </button>
               </div>
-
+              <div id="acc">
+              <img src="./images/user.png" alt="account" class="account">
+              <p id="acc1">Account</p>
+            </div>
+            <div id="cart">
+                <img src="./images/cart.png" alt="cart" class="cart">
+                <p>Cart</p>
+            </div>
     </div>
+    <div id="shirt">
+        <h1 id="off">Grab Upto 50% off <br> on your first purchase<br><button id="but">Buy Now</button></h1>
+        <img src="./images/shirt.png" alt="shirt" class="ad">
+        <img src="./images/shirt2.png" alt="shirt" class="ad">
+        
+     </div>
 </body>
 </html>
