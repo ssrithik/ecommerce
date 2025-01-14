@@ -112,6 +112,76 @@
         align-items: center;
     }
 }
+#filters{
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+#type{
+        margin-top:35px;
+        margin-left:30px;
+        width:85px;
+        height: 30px;
+        border-radius: 25px;
+        background-color: #eaeceb;
+        border: none;
+       
+}
+#price{
+        margin-top:35px;
+        
+        width:60px;
+        height: 30px;
+        border-radius: 25px;
+        background-color: #eaeceb;
+        border: none
+}
+#review{
+        margin-top:35px;
+        
+        width:70px;
+        height: 30px;
+        border-radius: 25px;
+        background-color: #eaeceb;
+        border: none
+}
+#color{
+        margin-top:35px;
+      
+        width:70px;
+        height: 30px;
+        border-radius: 25px;
+        background-color: #eaeceb;
+        border: none
+}
+#material{
+        margin-top:35px;
+       
+        width:70px;
+        height: 30px;
+        border-radius: 25px;
+        background-color: #eaeceb;
+        border: none
+}
+#offer{
+        margin-top:35px;
+      
+        width:70px;
+        height: 30px;
+        border-radius: 25px;
+        background-color: #eaeceb;
+        border: none
+}
+#sortby{
+        margin-top:35px;
+       margin-left: 540px;
+        width:70px;
+        height: 30px;
+        border-radius: 25px;
+        background-color: white;
+        
+}
+
         
     </style>
 </head>
@@ -147,7 +217,58 @@
         <h1 id="off">Grab Upto 50% off <br> on your first purchase<br><button id="but">Buy Now</button></h1>
         <img src="./images/shirt.png" alt="shirt" class="ad">
         <img src="./images/shirt2.png" alt="shirt" class="ad">
-        
      </div>
+     <div id="filters">
+      <select id="type" name="type" required>
+        <option value="" disabled selected>Shirt Type</option>
+        <option value="slimfit">Slim Fit</option>
+        <option value="regularfit">Regular fit</option>
+        <option value="skinnyfit">Skinny fit</option>
+        <option value="athleticfit">Athletic fit</option>
+      </select>
+      <select id="price" name="price" required>
+        <option value="" disabled selected>Price</option>
+        <option value="Rs.1000">below ₹1000</option>
+        <option value="Rs.1000toRs.1500">₹1000 - ₹1500</option>
+        <option value="Rs.1500toRs.2500">₹1500 - ₹2500</option>
+        <option value="aboveRs.2500">above ₹2500</option>
+      </select>
+      <select id="review" name="review" required>
+        <option value="" disabled selected>Review</option>
+        <option value="5star">Excellent</option>
+        <option value="4star">Very good</option>
+        <option value="3star">Good</option>
+        <option value="2star">Average</option>
+        <option value="1star">Poor</option>
+      </select>
+      <select id="color" name="color" required>
+        <option value="" disabled selected>Color</option>
+        <option value="red">Red</option>
+        <option value="yellow">Yellow</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select>
+      <select id="material" name="material" required>
+        <option value="" disabled selected>material</option>
+        <option value="cotton">Cotton</option>
+        <option value="polyester">Polyester</option>
+        <option value="linen">Linen</option>
+        <option value="bamboo">Bamboo</option>
+      </select>
+      <select id="offer" name="offer" required>
+        <option value="" disabled selected>offer</option>
+        <option value="75%off">75% off</option>
+        <option value="50%off">50% off</option>
+        <option value="40%off">40% off</option>
+        <option value="25%off">25% off</option>
+      </select>
+      <select id="sortby" name="sortby" required>
+        <option value="" disabled selected>sort by</option>
+        <option value="name">Name</option>
+        <option value="price">Price</option>
+        <option value="type">Type</option>
+      </select>
+     </div>
+     
 </body>
 </html>
