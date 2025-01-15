@@ -184,31 +184,67 @@
 #head{
   margin-left: 30px;
 }
-#shirt11{
-  height:250px;
-  width:200px;
-  border-radius: 5px;
+#shirts{
+  display: flex;
+  flex-direction: row;
 }
+.shirt11{
+  height: 250px;
+    width: 200px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    object-fit: cover;
+}
+.shirt11:hover {
+    transform: scale(1.03);
+}
+
 .he{
   margin-left: 60px;
 }
-#shirt1{
+.shirt1{
   margin-left: 30px;
-  flex-direction: column;
-  gap:1px;
+  padding: 15px;
+    transition: transform 0.2s;
+    border-radius: 8px;
+    cursor: pointer;
 }
-h3,h4,h5,#hi,#he{
+.shirt1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h3,h4,h5,.hi,.he{
   padding:0;
   margin:0;
 }
-#hi{
-  font-size:12px;
-  font-weight: 100;
-  color:grey
+h4{
+  margin-top: 12px;
+    font-size: 16px;
+    color: #2c2c2c;
 }
-#he{
-  font-size: 20px;
-  color: black;
+.hi{
+  font-size: 14px;
+    color: #666;
+    margin: 8px 0;
+}
+
+.he{
+  font-size: 24px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-top: 8px;
+}
+
+.btn{
+  border-radius: 25px;
+  height : 35px;
+  margin-top: 8px;
+  width:100px;
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid #404040;
+  font-weight: 600;
 }
         
     </style>
@@ -275,6 +311,8 @@ h3,h4,h5,#hi,#he{
         <option value="yellow">Yellow</option>
         <option value="blue">Blue</option>
         <option value="green">Red</option>
+        <option value="brown">Brown</option>
+        <option value="black">Black</option>
       </select>
       <select id="material" name="material" required>
         <option value="" disabled selected>material</option>
@@ -299,12 +337,34 @@ h3,h4,h5,#hi,#he{
      </div>
      <h2 id="head">Best Shirts For You!</h2>
      <div id="shirts">
-      <div id="shirt1">
-       <img src="./images/shirt3.png" alt="shirt3" id="shirt11">
+      <div class="shirt1">
+       <img src="./images/shirt3.png" alt="shirt3" class="shirt11">
         <h4>Men Shirt with Spread Collar</h4>
-        <p id="hi">Slim Fit Cotton</p>
-        <p id="he">₹1,699</p>
+        <p class="hi">Slim Fit Cotton</p>
+        <p class="he">₹1,699</p>
+        <button class="btn">Add to Cart</button>
       </div>
+      <div class="shirt1">
+        <img src="./images/shirt4.png" alt="shirt4" class="shirt11">
+         <h4>Cotton Stretch Plain Shirt</h4>
+         <p class="hi">Slim Fit cotton blend fabric</p>
+         <p class="he">₹2,499</p>
+         <button class="btn">Add to Cart</button>
+       </div>
+       <div class="shirt1">
+        <img src="./images/shirt5.png" alt="shirt5" class="shirt11">
+         <h4>Black Premium Cotton Shirt</h4>
+         <p class="hi">Pencil Fit satin cotton</p>
+         <p class="he">₹1,449</p>
+         <button class="btn">Add to Cart</button>
+       </div>
+       <div class="shirt1">
+        <img src="./images/shirt6.png" alt="shirt5" class="shirt11">
+         <h4>Men's Navy Blue Solid Cotton</h4>
+         <p class="hi">Straight Fit</p>
+         <p class="he">₹2,099</p>
+         <button class="btn">Add to Cart</button>
+       </div>
          
      </div>
 </body>
