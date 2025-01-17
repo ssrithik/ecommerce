@@ -181,10 +181,14 @@
         background-color: white;
         
 }
-#head{
+.head{
   margin-left: 30px;
 }
 #shirts{
+  display: flex;
+  flex-direction: row;
+}
+#headphones{
   display: flex;
   flex-direction: row;
 }
@@ -198,6 +202,20 @@
 .shirt11:hover {
     transform: scale(1.03);
 }
+.head1 {
+    height: 220px;        
+    width: 220px;       
+    border-radius: 12px;  
+    transition: transform 0.3s;
+    object-fit: contain;  
+    background: linear-gradient(145deg, #f6f8fd, #eef0f5); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); 
+}
+
+.head1:hover {
+    transform: scale(1.03);
+}
+
 
 .he{
   margin-left: 60px;
@@ -212,6 +230,17 @@
 .shirt1:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.headphone{
+  margin-left: 30px;
+  padding: 15px;
+    transition: transform 0.2s;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.headphone:hover {
+  transform: scale(1.05);  
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); 
 }
 
 h3,h4,h5,.hi,.he{
@@ -335,7 +364,7 @@ h4{
         <option value="type">Type</option>
       </select>
      </div>
-     <h2 id="head">Best Shirts For You!</h2>
+     <h2 class="head">Best Shirts For You!</h2>
      <div id="shirts">
       <div class="shirt1">
        <img src="./images/shirt3.png" alt="shirt3" class="shirt11">
@@ -373,6 +402,43 @@ h4{
          <button class="btn">Add to Cart</button>
        </div>
      </div>
-     
+     <h2 class="head">Best Headphones for You!</h2>
+     <div id="headphones">
+      <div class="headphone">
+        <img src="./images/head1.png" alt="head1" class="head1">
+        <h4>Black PTron Bassbuds Earbuds</h4>
+        <p class="hi">Connectivity type - wireless</p>
+        <p class="he">₹599</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="headphone">
+        <img src="./images/head2.png" alt="head2" class="head1">
+        <h4>HP H150 Wireless in-Ear Earbuds</h4>
+        <p class="hi">Connectivity type - wireless</p>
+        <p class="he">₹648</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="headphone">
+        <img src="./images/head3.png" alt="head3" class="head1">
+        <h4>Leaf Bass Pro Headphones</h4>
+        <p class="hi">Connectivity type - wireless</p>
+        <p class="he">₹4,999</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="headphone">
+        <img src="./images/head4.png" alt="head4" class="head1">
+        <h4>AirPods Pro 2</h4>
+        <p class="hi">Connectivity type - wireless</p>
+        <p class="he">₹24,900</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="headphone">
+        <img src="./images/head5.png" alt="head5" class="head1">
+        <h4>WILLED Wired Earphones with Microphone</h4>
+        <p class="hi">Connectivity type - wired</p>
+        <p class="he">₹4,568</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+     </div>
 </body>
 </html>
