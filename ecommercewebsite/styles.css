@@ -63,7 +63,8 @@ gap:5px;
 #acc1{
 font-size: 16px;
 }
-#shirtalign{
+.shirtalign{
+    display: inline-block;
     flex-direction: column;
     gap:5px;
     margin-left: 30px;
@@ -71,12 +72,89 @@ font-size: 16px;
 }
 
 .aligns{
-    border-radius:15px;
+    border-radius:10px;
     height:500px;
     width:415px;
+
 }
 .aligns1{
     width:100px;
     height:100px;
-    border-radius: 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.details{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0;
+    padding-left: 20px;
+    margin-left:100px;
+}
+
+.hi{
+    font-size: 14px;
+      color: #666;
+      margin: 8px 0;
+  }
+  
+  .he{
+    font-size: 24px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-top: 8px;
+  }
+  .ratings {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+    border-bottom:1px solid #ddd;
+}
+
+.stars {
+    color: #FFD700;
+    font-size: 18px;
+}
+.he1{
+    font-size: 28px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-top: 8px;
+      margin-top: 20px;
+  }
+  .he2{
+    font-size: 18px;
+      text-decoration: line-through;
+      color: #999;
+      margin-left:25px;
+      margin-top:25px;
+  }
+
+.rating-count {
+    color: #666;
+    font-size: 14px;
+}
+.pri{
+    display: flex;
+    flex-direction: row;
+}
+.discount{
+    color: #00A650;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top:25px;
+    margin-left:20px;
+}
+.btn-size{
+    height:55px;
+    width:55px;
+    margin-left:10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.btn-size:hover{
+    border-color: #333;
 }
