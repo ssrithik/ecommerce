@@ -101,7 +101,30 @@
         button.classList.toggle('active', !isOpen);
     });
 });
+</script>
+<div class="noofitems">
+<button id="dec" onclick="Decrement()">-</button>
+<span class="value" id="value">1</span>
+<button id="inc" onclick="Increment()">+</button>
+</div>
+<script>
+  let count=0;
+  function update(){
+    document.getElementById('value').textContent=count;
 
+  }
+  function Increment(){
+    
+    count++;
+    update();
+  }
+ function Decrement(){
+  if(count > 1)
+ {
+  count--;
+  update();
+ }
+ }
 </script>
 
 </div>
