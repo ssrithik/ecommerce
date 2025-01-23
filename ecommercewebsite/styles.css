@@ -254,3 +254,50 @@ font-size: 16px;
  
   
 }
+
+#addtocart{
+margin-top:30px;
+height:40px;
+width:200px;
+border-radius: 25px;
+border: 1px solid #333;
+font-weight: bold;
+color: #1a1a1a;
+background-color: #fff;
+cursor: pointer;
+}
+#buynow{
+    margin-top:20px;
+    height:40px;
+    width:200px;
+    border-radius:25px;
+    border:1px solid #333;
+    font-weight:bold;
+    color: #fff;
+    margin-right:20px;
+    background-color: #333;
+    cursor: pointer;
+}
+.freed{
+    height:20px;
+    width:20px;
+  
+    margin-left:15px;
+   margin-bottom:10px;
+}
+#free{
+margin-top:20px;
+border: 1px solid #ddd;
+height:70px;
+display: flex;
+align-items: center;
+}
+.free{
+    margin-left:20px;
+margin-top: 10px;
+}
+
+#postal{
+    margin-bottom:10px;
+    margin-left:10px;
+}
