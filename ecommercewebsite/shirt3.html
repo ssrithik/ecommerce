@@ -33,6 +33,10 @@
                 <img src="./images/cart.png" alt="cart" class="cart">
                 <p>Cart</p>
             </div>
+            <div id="wishlist">
+              <img src="./images/heart.png" alt="wishlist" class="wishlist">
+              <p>Wishlist</p>
+          </div>
     </div>
     <div class="container">
     <div class="shirtalign">
@@ -56,6 +60,38 @@
   <p class="he2">₹2,499</p>
   <span class="discount">32% OFF</span>
 </div>
+<h4>Choose a Color</h4>
+<div class="shirt-colors">
+  <div class="color-option active" data-color="#A87CA0">
+    <div class="color-swatch" style="background-color: #A87CA0;"></div>
+    <span class="color-name">Lavender</span>
+  </div>
+  <div class="color-option" data-color="#008000">
+    <div class="color-swatch" style="background-color: #008000;"></div>
+    <span class="color-name">Green</span>
+  </div>
+  <div class="color-option" data-color="#FF0000">
+    <div class="color-swatch" style="background-color: #FF0000;"></div>
+    <span class="color-name">Red</span>
+  </div>
+  <div class="color-option" data-color="#800080">
+    <div class="color-swatch" style="background-color: #800080;"></div>
+    <span class="color-name">Purple</span>
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const colorOptions = document.querySelectorAll('.color-option');
+
+  colorOptions.forEach(option => {
+    option.addEventListener('click', () => {
+      colorOptions.forEach(opt => opt.classList.remove('active'));
+      option.classList.add('active');
+      
+    });
+  });
+});
+</script>
 <h4>SELECT SIZE</h4>
 <div class="shirt-size">
   <button class="btn-size">38</button>
@@ -81,6 +117,17 @@
           </p>
       </div>
   </div>
+  <div class="accordion-item">
+    <button class="accordion-header">
+        Delivery Information
+        <span class="arrow">&#9660;</span>
+    </button>
+    <div class="accordion-content">
+        <p>Estimated Delivery: 3-5 Business Days<br>
+        Free Shipping on orders above ₹1,500<br>
+        Easy 30-day return policy</p>
+    </div>
+</div>
 </div>
 <script>
   document.querySelectorAll('.accordion-header').forEach(button => {
