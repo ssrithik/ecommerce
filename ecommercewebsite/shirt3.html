@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
     <div id="top">
-        <img src="./images/nexcart.svg" alt="nexcart">
+        <img src="./images/nexcart.svg" alt="nexcart" id="logo">
             <select id="Categories" name="Categories" onchange="updateActivities()" required>
                 <option value="" disabled selected>Categories</option>
                 <option value="shirts">Shirts</option>
@@ -40,12 +41,19 @@
     </div>
     <div class="container">
     <div class="shirtalign">
-    <img src="./images/shirt3.png" alt="shirt3" class="aligns">
+      <div class="pimages">
+      <button class="prev">&#8249;</button>
+    <img src="./images/shirt3.png" alt="shirt3" id="aligns" class="pimage active">
+    <img src = "./images/shirt31.png" alt="shirt31" id="aligns4" class="pimage">
+        <img src = "./images/shirt32.png" alt="shirt32" id="aligns5" class="pimage">
+        <img src = "./images/shirt33.png" alt="shirt33" id="aligns6" class="pimage">
+        <button class="next">&#8250;</button>
+      </div>
       <div id="angle">
-        <img src="./images/shirt3.png" alt="shirt3" class="aligns1">
-        <img src = "./images/shirt31.png" alt="shirt31" class="aligns1">
-        <img src = "./images/shirt32.png" alt="shirt32" class="aligns1">
-        <img src = "./images/shirt33.png" alt="shirt33" class="aligns1">
+        <img src="./images/shirt3.png" alt="shirt3" id="aligns0" >
+        <img src = "./images/shirt31.png" alt="shirt31" id="aligns1" >
+        <img src = "./images/shirt32.png" alt="shirt32" id="aligns2" >
+        <img src = "./images/shirt33.png" alt="shirt33" id="aligns3" >
       </div>
     </div>
     <div class="details">
