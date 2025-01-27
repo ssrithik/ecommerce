@@ -390,5 +390,15 @@ margin-top: 10px;
     text-decoration: underline;
 }
 #logo{
-color: #f4f4f4;;
+background-color: #f4f4f4;
+}
+#addtocart:hover {
+    background-color: #f5f5f5;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+#buynow:hover {
+    background-color: #1E45AC;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
