@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
+    <script src="script1.js"></script>
     <style>
-      #shirt{
+      .shirt{
         margin-top:20px;
-        margin-left: 30px;
-        margin-right:50px;
+       
         height:200px;
         width: auto;
         background-color:antiquewhite;
@@ -23,6 +23,17 @@
       
       #but{
         margin-top:20px;
+        height:35px;
+        width:100px;
+        border-radius: 25px;
+        border: none;
+        color: white;
+        background-color: black;
+        transition: transform 0.2s, background-color 0.2s;
+        cursor: pointer;
+      }
+      #but1{
+        margin-top:15px;
         height:35px;
         width:100px;
         border-radius: 25px;
@@ -105,7 +116,6 @@ body {
 }
 #offer{
         margin-top:35px;
-      
         width:70px;
         height: 30px;
         border-radius: 25px;
@@ -229,7 +239,39 @@ h4{
   border: 2px solid #404040;
   font-weight: 600;
 }
-        
+.options{
+  position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.previous, .nextone{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding:10px;
+    cursor:pointer;
+
+}
+.previous{
+    left:20px;
+}
+.nextone{
+    right:20px;
+}
+.ad1{
+  margin-right:50px;
+}
+.ad2{
+  margin-right: 50px;
+}
+.regi{
+  display:none;
+}
+.active{
+  display:flex;
+}
+
     </style>
     <link rel="stylesheet" href="./styles.css" />
 </head>
@@ -265,11 +307,31 @@ h4{
               <p>Wishlist</p>
           </div>
     </div>
-    <div id="shirt">
+    <div class="options">
+      <button class="previous">&#8249;</button>
+    <div class="regi active">
+      <div class="shirt">
         <h1 id="off">Grab Upto 50% off <br> on your first purchase<br><button id="but">Buy Now</button></h1>
-        <img src="./images/shirt.png" alt="shirt" class="ad">
-        <img src="./images/shirt2.png" alt="shirt" class="ad">
-     </div>
+        <img src="./images/shirt.png" alt="shirt" class="ad1">
+        <img src="./images/shirt2.png" alt="shirt" class="ad2">
+        </div>
+      </div>
+        <div  class="regi">
+        <div class="shirt">
+          <h1 id="off">Grab upto 25% off <br> on premium headphones<br><button id="but">Buy Now</button></h1>
+          <img src="./images/headj1.jpg" alt="headj" class="ad1">
+          <img src="./images/headj.jpg" alt="headj1" class="ad2">
+        </div>
+        </div>
+        <div class="regi">
+          <div class="shirt">
+            <h1 id="off">Elegant watches with exciting offers,<br>grab yours now!<br><button id="but1">Buy Now</button></h1>
+            <img src="./images/watchj.jpg" alt="watchj" class="ad1">
+            <img src="./images/watchj2.jpg" alt="watchj2" class="ad2">
+          </div>
+        </div>
+        <button class="nextone">&#8250;</button>
+      </div>
      <div id="filters">
       <select id="type" name="type" required>
         <option value="" disabled selected>Shirt Type</option>
