@@ -102,15 +102,24 @@
 </script>
 <h4>Choose Style</h4>
 <div class="headphone-style">
-  <div class="style-option active" data-style="wireless">
-    <div class="style-icon">🎧</div>
-    <span class="style-name">Wireless</span>
+  <div class="style-option" data-style="wireless">
+    <div class="style-icon"><button id="wless" class="sel">🎧<br>Wireless</button></div>
   </div>
   <div class="style-option" data-style="wired">
-    <div class="style-icon">🎧</div>
-    <span class="style-name">Wired</span>
+    <div class="style-icon"><button id="wired" class="sel">🎧<br>Wired</button></div>
   </div>
 </div>
+<script>
+  const buttons = document.querySelectorAll('.sel');
+  buttons.forEach(button => {
+    button.addEventListener('click', function(){
+      buttons.forEach(btn => {
+        btn.classList.remove('selected');
+      });
+     this.classList.add('selected');
+    });
+  });
+</script>
 <div class="accordion">
   <div class="accordion-item">
       <button class="accordion-header">
